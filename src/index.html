@@ -1,10 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
-    <title>Nexcent Agency</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -14,126 +14,165 @@
     />
   </head>
   <body>
-    <header>
-      <!-- navbar section -->
-      <div class="navbar bg-base-100 shadow-sm px-12">
-        <div class="flex-1 flex items-center">
-          <div
-            tabindex="0"
-            role="button"
-            class="btn btn-ghost btn-circle avatar"
-          >
-            <div class="w-10 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-              />
-            </div>
+    <!-- navbar -->
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="flex-1">
+        <div class="avatar">
+          <div class=" ">
+            <img src="./assets/logo.png" />
           </div>
-          <a class="btn btn-ghost text-xl">Nexcent</a>
         </div>
-        <div class="flex-none">
-          <details class="dropdown dropdown-end md:hidden">
-            <summary class="btn m-1"><i class="fa-solid fa-bars"></i></summary>
-            <ul
-              class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
-            >
-              <li><a>Home</a></li>
-              <li><a>Features</a></li>
-              <li><a>Community</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Pricing</a></li>
-              <button class="btn bg-primary-color text-white">
-                Register Now <i class="fa-solid fa-right-long"></i>
-              </button>
-            </ul>
-          </details>
-          <ul class="hidden md:flex menu menu-horizontal px-1">
+        <a class="btn btn-ghost text-xl">Nexcent</a>
+      </div>
+      <div class="flex-none">
+        <!-- chuto screen er device gula eta dekhbe -->
+        <div class="dropdown dropdown-bottom dropdown-end sm:hidden">
+          <div tabindex="0" role="button" class="btn m-1">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul
+            tabindex="-1"
+            class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+          >
             <li><a>Home</a></li>
             <li><a>Features</a></li>
             <li><a>Community</a></li>
             <li><a>Blog</a></li>
-            <li><a>Pricing</a></li>
             <button class="btn bg-primary-color text-white">
               Register Now <i class="fa-solid fa-right-long"></i>
             </button>
           </ul>
         </div>
+
+        <!-- 640px er uporer size er device gula eta dekhbe -->
+        <ul class="menu menu-horizontal px-1 hidden sm:flex">
+          <li><a>Home</a></li>
+          <li><a>Features</a></li>
+          <li><a>Community</a></li>
+          <li><a>Blog</a></li>
+          <button class="btn bg-primary-color text-white">
+            Register Now <i class="fa-solid fa-right-long"></i>
+          </button>
+        </ul>
       </div>
-      <!-- hero section -->
-      <div class="carousel w-full">
-        <div id="item1" class="carousel-item w-full">
-          <div class="hero bg-secondary-color min-h-screen">
-            <div
-              class="hero-content flex-col lg:flex-row-reverse justify-between"
-            >
-              <img src="./assets/carousel-1.png" class="max-w-md rounded-lg" />
-              <div class="max-w-1/2">
-                <h1 class="text-5xl font-bold">
-                  Lessons and insights
-                  <span class="text-primary-color">from 8 years</span>
-                </h1>
-                <p class="py-6">
-                  Where to grow your business as a photographer: site or social
-                  media?
-                </p>
-                <button class="btn bg-primary-color text-white">
-                  Register Now <i class="fa-solid fa-right-long"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="item2" class="carousel-item w-full">
-          <div class="hero bg-secondary-color min-h-screen">
-            <div
-              class="hero-content flex-col lg:flex-row-reverse justify-between"
-            >
-              <img src="./assets/carousel-1.png" class="max-w-md rounded-lg" />
-              <div class="max-w-1/2">
-                <h1 class="text-5xl font-bold">
-                  Lessons and insights
-                  <span class="text-primary-color">from 8 years</span>
-                </h1>
-                <p class="py-6">
-                  Where to grow your business as a photographer: site or social
-                  media?
-                </p>
-                <button class="btn bg-primary-color text-white">
-                  Register Now <i class="fa-solid fa-right-long"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="item3" class="carousel-item w-full">
-          <div class="hero bg-secondary-color min-h-screen">
-            <div
-              class="hero-content flex-col lg:flex-row-reverse justify-between"
-            >
-              <img src="./assets/carousel-1.png" class="max-w-md rounded-lg" />
-              <div class="max-w-1/2">
-                <h1 class="text-5xl font-bold">
-                  Lessons and insights
-                  <span class="text-primary-color">from 8 years</span>
-                </h1>
-                <p class="py-6">
-                  Where to grow your business as a photographer: site or social
-                  media?
-                </p>
-                <button class="btn bg-primary-color text-white">
-                  Register Now <i class="fa-solid fa-right-long"></i>
-                </button>
-              </div>
+    </div>
+
+    <!-- hero section -->
+    <div class="carousel w-full">
+      <div id="item1" class="carousel-item w-full">
+        <div class="hero bg-secondary-color">
+          <div
+            class="hero-content flex-col lg:flex-row-reverse justify-between w-full"
+          >
+            <img src="./assets/carousel-1.png" class="max-w-sm rounded-lg" />
+            <div class="sm:max-w-lg">
+              <h1 class="text-5xl font-bold">
+                Lessons and insights
+                <span class="text-primary-color">from 8 years</span>
+              </h1>
+              <p class="py-6">
+                Where to grow your business as a photographer: site or social
+                media?
+              </p>
+              <button class="btn bg-primary-color text-white">
+                Register </i>
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex w-full justify-center gap-2 py-2">
-        <a href="#item1" class="btn btn-xs">1</a>
-        <a href="#item2" class="btn btn-xs">2</a>
-        <a href="#item3" class="btn btn-xs">3</a>
+      <div id="item2" class="carousel-item w-full">
+        <div class="hero bg-secondary-color">
+          <div
+            class="hero-content flex-col lg:flex-row-reverse justify-between w-full"
+          >
+            <img src="./assets/carousel-1.png" class="max-w-sm rounded-lg" />
+            <div class="sm:max-w-lg">
+              <h1 class="text-5xl font-bold">
+                Lessons and insights
+                <span class="text-primary-color">from 8 years</span>
+              </h1>
+              <p class="py-6">
+                Where to grow your business as a photographer: site or social
+                media?
+              </p>
+              <button class="btn bg-primary-color text-white">
+                Register </i>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+      <div id="item3" class="carousel-item w-full">
+        <div class="hero bg-secondary-color">
+          <div
+            class="hero-content flex-col lg:flex-row-reverse justify-between w-full"
+          >
+            <img src="./assets/carousel-1.png" class="max-w-sm rounded-lg" />
+            <div class="sm:max-w-lg">
+              <h1 class="text-5xl font-bold">
+                Lessons and insights
+                <span class="text-primary-color">from 8 years</span>
+              </h1>
+              <p class="py-6">
+                Where to grow your business as a photographer: site or social
+                media?
+              </p>
+              <button class="btn bg-primary-color text-white">
+                Register </i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex w-full justify-center gap-2 py-2">
+      <a href="#item1" class="btn btn-xs">1</a>
+      <a href="#item2" class="btn btn-xs">2</a>
+      <a href="#item3" class="btn btn-xs">3</a>
+    </div>
+
+    <!-- clients section -->
+
+    <section class="py-12 px-8 sm:px-24 flex flex-col justify-center items-center gap-4">
+      <h2 class="text-3xl font-bold text-gray-700 ">Our Clients</h2>
+      <p class="text-gray-600">We have been working with some Fortune 500+ clients</p>
+      <div class="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-7 w-full my-4 space-y-4">
+        <img src="./assets/clients/client1.png" alt="">
+        <img src="./assets/clients/client2.png" alt="">
+        <img src="./assets/clients/client3.png" alt="">
+        <img src="./assets/clients/client4.png" alt="">
+        <img src="./assets/clients/client5.png" alt="">
+        <img src="./assets/clients/client6.png" alt="">
+        <img src="./assets/clients/client4.png" alt="">
+      </div>
+
+    </section>
+
+    <!-- commmunity section -->
+     <section class="py-12 px-8 sm:px-24 flex flex-col justify-center items-center gap-4">
+      <h2 class="text-3xl font-bold text-gray-700 max-w-md text-center">Manage your entire community in a single system</h2>
+      <p class="text-gray-600">Who is Nextcent suitable for?</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12  w-full">
+       <div class="flex flex-col items-center justify-center max-w-sm py-8 px-4  shadow-md shadow-gray-200">
+        <img src="./assets/membership.png" alt="">
+        <h3 class="text-2xl font-bold">Membership Organisations</h3>
+        <p class="text-gray-600 text-center">Our membership management software provides full automation of membership renewals and payments</p>
+       </div>
+      <div class="flex flex-col items-center justify-center max-w-sm py-8 px-4  shadow-md shadow-gray-200">
+        <img src="./assets/assosiation.png" alt="">
+        <h3 class="text-2xl font-bold">National Associations</h3>
+        <p class="text-gray-600 text-center">Our membership management software provides full automation of membership renewals and payments</p>
+       </div>
+       <div class="flex flex-col items-center justify-center max-w-sm py-8 px-4  shadow-md shadow-gray-200">
+        <img src="./assets/groups.png" alt="">
+        <h3 class="text-2xl font-bold">Clubs And Groups</h3>
+        <p class="text-gray-600 text-center">Our membership management software provides full automation of membership renewals and payments</p>
+       </div>
+      </div>
+
+    </section>
+
+
   </body>
 </html>
